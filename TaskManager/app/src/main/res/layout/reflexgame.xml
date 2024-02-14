@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:id="@+id/reflex_screen">
+
+    <TextView
+        android:id="@+id/reflex_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REFLEX GAME"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/multicolor_navigation"
+        android:text="Try MultiColor"
+        android:layout_below="@id/reflex_header"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/backgroundColor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reflex_header"
+        android:id="@+id/reflex_navigate"
+        android:layout_marginTop="15dp"
+        android:text="Click Start and When the Color Change Click Stop"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginVertical="150dp"
+        android:layout_marginHorizontal="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reflex_buttons"
+        android:layout_below="@id/reflex_header"
+        android:gravity="center"
+        android:layout_marginTop="275dp">
+        <Button
+            android:id="@+id/reflex_startbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reflex_header"
+            android:text="start"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#515052"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/reflex_stopbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Stop "
+            android:layout_marginLeft="25dp"
+            android:backgroundTint="#515052"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/reflex_buttons"
+        android:id="@+id/reflex_result"
+        android:layout_margin="50dp"
+        android:textSize="35dp"
+        android:gravity="center"/>
+</RelativeLayout>

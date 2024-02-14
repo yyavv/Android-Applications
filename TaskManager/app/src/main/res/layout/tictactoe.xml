@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="Tic Tac Toe"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview1"
+        android:gravity="center"
+        android:text="Turn for X"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview2"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/box1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="75dp"/>
+
+        <TextView
+            android:id="@+id/box2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="75dp"/>
+
+        <TextView
+            android:id="@+id/box3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="75dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row1"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/box4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="75dp"/>
+
+        <TextView
+            android:id="@+id/box5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="75dp"/>
+
+        <TextView
+            android:id="@+id/box6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="75dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row2"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/box7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="75dp"/>
+
+        <TextView
+            android:id="@+id/box8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="75dp"/>
+
+        <TextView
+            android:id="@+id/box9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="75dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textWinner"
+        android:layout_below="@id/row3"
+        android:layout_margin="15dp"
+        android:text=""
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReset"
+        android:layout_below="@id/textWinner"
+        android:layout_centerInParent="true"
+        android:text="PLAY AGAIN"
+        android:visibility="invisible"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>
